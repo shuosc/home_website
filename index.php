@@ -7,6 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
+
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"  />
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -192,8 +193,6 @@
 			</div>
 		</div>
 	</div>
-
-
   <script type="text/javascript">
    //回到顶部
    $(document).ready(function(){
