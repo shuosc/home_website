@@ -6,8 +6,8 @@
 	<meta name="keywords" content="" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"  />
 
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"  />
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
@@ -19,6 +19,9 @@
 	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="js/slide.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+
 	<script>
 		(function($){
 			$(window).load(function(){
@@ -26,9 +29,27 @@
 			});
 		})(jQuery);
 	</script>
-
 </head>
 <body>
+	<p id="back-to-top">
+	<a href="#top"><span></span></a>
+	</p>
+	<!--[if lt IE 7]>
+	<div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+		<div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://images.24city.com/noie6/ie6nomore-cornerx.jpg' style='border: none;' alt='关闭本提示'/></a></div>
+		<div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+			<div style='width: 75px; float: left;'><img src='http://images.24city.com/noie6/ie6nomore-warning.jpg' alt='提示您升级浏览器'/></div>
+			<div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+				<div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>提示：您还在用即将淘汰的IE 6？</div>
+				<div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>为了获得更好的用户检验，请升级您的浏览器！<br/>(从右边任选一个升级就不会出现本提示)</div>
+			</div>
+			<div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='http://images.24city.com/noie6/ie6nomore-ie8.jpg' style='border: none;' alt='升级到微软公司的Internet Explorer 8'/></a></div>
+			<div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://images.24city.com/noie6/ie6nomore-firefox.jpg' style='border: none;' alt='升级为Firefox浏览器'/></a></div>      
+			<div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='http://images.24city.com/noie6/ie6nomore-safari.jpg' style='border: none;' alt='升级为苹果公司的Safari 4浏览器'/></a></div>
+			<div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://images.24city.com/noie6/ie6nomore-chrome.jpg' style='border: none;' alt='升级为Google公司的Chrome浏览器'/></a></div>
+		</div>
+	</div>
+	<![endif]--> 
 	<div id="Bcontainer">
 		<a href="https://github.com/shuopensourcecommunity">
 			<img style="position: absolute; top: 0; right: 0; border: 0;" src="css/images/joinus.png" alt="Join us on GitHub">
@@ -44,18 +65,21 @@
 						</a>
 					</div>
 				</div>
-				<div class="sub">
-					<ul>
-						<li><a href="#" >主页</a></li>
-						<li><a href="https://github.com/shuopensourcecommunity" >Github</a></li>
-						<!--<li><a href="#" >About us</a></li>-->
-					</ul>
-					<div class="sub_right">
-						<!--<div class="signup_d"><a href="">sign up</a></div>
-						<div>or</div>
-						<div class="login_d"><button></button></div>-->
+
+				<div class="row">
+       				<div class="sub col-xm-5 navbar-wrapper">
+						<ul>
+							<li><a href="#" >主页</a></li>
+							<li><a href="https://github.com/shuopensourcecommunity" >Github</a></li>
+							<!--<li><a href="#" >About us</a></li>-->
+						</ul>
+						<div class="sub_right">
+							<!--<div class="signup_d"><a href="">sign up</a></div>
+							<div>or</div>
+							<div class="login_d"><button></button></div>-->
+						</div>
 					</div>
-				</div>
+		        </div>
 			</div>
 			<div class="clearboth"></div>
 			<div id="cv">
@@ -166,14 +190,30 @@
 					<li>CSDN高校俱乐部</li>
 				</ul>
 			</div>
-	
 		</div>
 	</div>
-	<script>
-		var navigation = responsiveNav(".sub",{animate:true});
-		navigation.toggle();
-	</script>
 
+
+  <script type="text/javascript">
+   //回到顶部
+   $(document).ready(function(){
+   		$('#back-to-top').hide();
+        $(window).scroll(function() {
+        	if($(window).scrollTop() > 100){
+        	  	$('#back-to-top').fadeIn(500);
+    	    } else {
+        		$('#back-to-top').fadeOut(500);
+        	}
+    	});
+    	//当点击页面的时候跳转到顶部
+        $('#back-to-top').click(function(){
+        	$('body,html').animate({scrollTop : 0},500);
+        	return false;
+        });
+  		var navigation = responsiveNav(".sub",{animate:true});
+		navigation.toggle();
+    });
+  </script>
 </body>
 </html>
 <!-- PHP ： 人人状态信息更新 -->
