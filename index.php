@@ -7,7 +7,7 @@
 	<meta name="keywords" content="" />
 
 	<!-- //////// Favicon ////////  -->
-	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width; initial-scale=1.0"> -->
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"  />
 
 	<!--
@@ -21,28 +21,22 @@
 
 	<!-- //////// Css StyleSheets ////////  -->
 	<!-- 引入这些文件至 <head> 中 -->
-<link rel="stylesheet" href="js/responsive-nav.js-master/responsive-nav.css">
-<script src="js/responsive-nav.js-master/responsive-nav.min.js"></script>	
+    <link rel="stylesheet" href="js/responsive-nav.js-master/responsive-nav.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="js/slide.js"></script>
-	<script>
-    (function($){
-        $(window).load(function(){
-            $(".turnto_point").mCustomScrollbar();
-        });
-    })(jQuery);
-</script>
+
 
 </head>
 <body>
+<p id="back-to-top">
+    <a href="#top"><span></span></a>
+  </p>
 	<div id="Bcontainer">
         <a href="https://github.com/shuopensourcecommunity">
             <img style="position: absolute; top: 0; right: 0; border: 0;" src="css/images/joinus.png" alt="Join us on GitHub">
         </a>
-        <div id="container">
+        <div id="container" class="container">
 			<div id="head">
 				<div class="head_logo">
 					<a class="logo" href="index.php"></a>
@@ -53,7 +47,9 @@
 						</a>
 					</div>
 				</div>
-				<div class="sub">
+
+				<div class="row">
+        <div class="sub col-xm-5 navbar-wrapper">
 					<ul>
 						<li><a href="#" >主页</a></li>
 						<li><a href="https://github.com/shuopensourcecommunity" >Github</a></li>
@@ -65,6 +61,7 @@
 						<div class="login_d"><button></button></div>-->
 					</div>
 				</div>
+      </div>
 			</div>
 			<div class="clearboth"></div>
 			<div id="cv">
@@ -177,10 +174,42 @@
 	
 		</div>
 	</div>
-    <script>
-        var navigation = responsiveNav(".sub",{animate:true});
-        navigation.toggle();
-    </script>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    (function($){
+        $(window).load(function(){
+            $(".turnto_point").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
+  <script type="text/javascript">
+  //回到顶部
+$(document).ready(function(){
+      $('#back-to-top').hide();
+      $(window).scroll(function () {
+        if($(window).scrollTop() > 100){
+          $('#back-to-top').fadeIn(500);
+        }else{
+          $('#back-to-top').fadeOut(500);
+        }
+          });
+        //当点击页面的时候跳转到顶部
+        $('#back-to-top').click(function(){
+          $('body,html').animate({scrollTop : 0},500);
+          return false;
+        });
+  
+
+
+
+    });
+
+  </script>
 
 </body>
 </html>
