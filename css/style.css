@@ -6,7 +6,6 @@ font-style: normal;font:12px/22px "\5B8B\4F53",Arial, Helvetica, sans-serif;}
 
 a{
 	text-decoration: none;
-	font-family: "Microsoft YaHei" ! important;
 	color: #fff;
 }
 body{
@@ -219,8 +218,7 @@ body{
     padding: 15px 0;
 	margin-top: 20px;
 	border: 4px solid #324758;
-	width: 100%;
-	height: 100px;
+	min-height: 80px;
 	-moz-border-radius: 5px;      /* Gecko browsers */
     -webkit-border-radius: 5px;   /* Webkit browsers */
     border-radius:5px;
@@ -265,14 +263,29 @@ body{
     margin-right: 10px;
 }
 
-
-#footer{
-	overflow: hidden;
-	width: 100%;
+#footer_container {
+	width: 125%;
+	margin-left: -12.5%;
 	height: 217px;
 	background: #dbdbdb;
 	border-top: 3px solid #969696;
+	overflow: hidden;
 }
+
+#footer{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer a {
+	color: #8e8e8e;
+}
+
+#footer a:hover {
+	color: #666666;
+}
+
 .turnto_box{
     width: 30%;
     height: 347px;
@@ -312,7 +325,7 @@ body{
 	height: 375px;
 	position: absolute;
 }
-div[id^="content"]
+#text_content
 {
 	display:none;	
 }
@@ -332,7 +345,7 @@ div[id^="content"]
     float: left;
     width: 260px;
     height: 180px;
-    color: #9c9c9c;
+    color: #8e8e8e;
     font-size: 15px;
     margin-left: 63px;
     margin-left: 59px;

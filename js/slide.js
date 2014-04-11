@@ -10,16 +10,16 @@ jQuery(function($){
 			if (index == i) {
 				return;
 			};
-			
 			i = index;
-			$('.img_box img').slice(0, i).stop().animate({top: img_height_neg}, 500);
-			$('.img_box img').slice(i, i + 1).stop().animate({top:'0px'},500);
-			$('.img_box img').slice(i + 1).stop().animate({top: img_height_pos}, 500);
-			$.data_load(i);
+			$.slide_turn_to(i);
 		});
 	});
 
-	$.extend({'data_load':function(i){
+	$.extend({'slide_turn_to':function(i){
+		$('.img_box img').slice(0, i).stop().animate({top: img_height_neg}, 500);
+		$('.img_box img').slice(i, i + 1).stop().animate({top:'0px'},500);
+		$('.img_box img').slice(i + 1).stop().animate({top: img_height_pos}, 500);
+		
 		var con = $('#text_content div').slice(i, i + 1).html();
 		$('.content_box').html('').html(con);
 	}});
@@ -29,21 +29,16 @@ jQuery(function($){
 		if (i == num){
 			i = 0;
 		}
-		
-		$('.img_box img').slice(0, i).stop().animate({top: img_height_neg}, 500);
-		$('.img_box img').slice(i, i + 1).stop().animate({top:'0px'},500);
-		$('.img_box img').slice(i + 1).stop().animate({top: img_height_pos}, 500);
-		$.data_load(i);
-	
+		$.slide_turn_to(i);
 		$('.turnto_point').mCustomScrollbar("scrollTo", $(".turnto_point li").slice(i, i + 1).position().top);
 
 	}});
 
-	var $time_set = setInterval('$.left_tri()','4000');
+	var $time_set = setInterval($.left_tri, 4000);
 	$('.content_box,.turnto_box').hover(function(){
 		clearInterval($time_set);
 	},function(){
-		$time_set = setInterval('$.left_tri()','4000');
+		$time_set = setInterval($.left_tri, 4000);
 	});
 
 })
