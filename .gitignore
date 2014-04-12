@@ -1,0 +1,4 @@
+# ignore project files
+/.idea
+# ignore binary image cache files
+*.db
