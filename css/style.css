@@ -70,7 +70,7 @@ body{
 .sub{
 	background: #34495e;
 	position: relative;
-	width: 100%;
+  /*width: 77%;*/
 	height: 50px;
 	color: #34495e;
 	margin:0 auto;
@@ -80,6 +80,7 @@ body{
     border-radius:8px;            /* W3C syntax */
 }
 .sub ul{
+  margin-top: 0;
 	list-style: none;
 	color: #34495e;
 }
@@ -231,6 +232,7 @@ body{
 }
 
 .msg_logo {
+  margin-top: -7px;
     display: block;
     width: 120px;
     float: left;
@@ -417,5 +419,39 @@ img {
 
 .mCSB_draggerRail {
 	width: 4px !important;
+}
+/*回到顶部css*/
+p#back-to-top{
+    position:fixed;
+    bottom:100px;
+    right:117px;
+    z-index: 8;
+	display: none;
+}
+p#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:#d1d1d1;
+    display:block;
+    width:68px;
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+    -moz-transition:color 1s;
+    -webkit-transition:color 1s;
+    -o-transition:color 1s;
+}
+p#back-to-top a:hover{
+    color:#979797;
+}
+p#back-to-top a span{
+    background:#d1d1d1 url(../images/toTop.png) no-repeat 0 0;
+    border-radius:3px;
+    display:block;
+    height:68px;
+    width:68px;
+    margin-bottom:5px;
+
+}
+#back-to-top a:hover span{
+    background:#979797 url(../images/toTop.png) no-repeat -72px 0;
 }
 
