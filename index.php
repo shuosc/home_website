@@ -110,30 +110,30 @@
 							</div>
 							<div class="pwcll">
 								<div class="img_box">
-									<img id="img_1" src="css/images/1.jpg" alt="">
-									<img id="img_2" src="css/images/2.jpg" alt="">
-									<img id="img_3" src="css/images/3.jpg" alt="">
-									<img id="img_4" src="css/images/4.jpg" alt="">
-									<img id="img_5" src="css/images/5.jpg" alt="">
+									<img src="css/images/1.jpg" alt="">
+									<img src="css/images/2.jpg" alt="">
+									<img src="css/images/3.jpg" alt="">
+									<img src="css/images/4.jpg" alt="">
+									<img src="css/images/5.jpg" alt="">
 								</div>
 								<div class="content_box">
 									上海大学开源社区是一个以开源软件为基础的以技术交流和项目合作为主要活动的学生组织。
 								</div>
 							</div>
 							<div id="text_content">
-								<div id="content_1">
+								<div>
 									上海大学开源社区与社会上的技术活动组织也有良好的接触，该照片为【拥抱开源 - 企业IT自主之路】志愿者活动
 								</div>
-								<div id="content_2">
+								<div>
 									上海大学开源社区与社会上的技术活动组织也有良好的接触，该照片为【拥抱开源 - 企业IT自主之路】志愿者活动
 								</div>
-								<div id="content_3">
+								<div>
 									开源系列讲座专题 - Django框架Web应用开发，主讲人：杨凡
 								</div>
-								<div id="content_4">
+								<div>
 									2013年冬季开源系列讲座，为开源社区在学院内部开设的长期活动，意在让对技术感兴趣的同学能够得到更多的机会
 								</div>
-								<div id="content_5">
+								<div>
 									开源系列讲座专题 - QML and QT5 introduction.
 								</div>
 							</div>
@@ -152,44 +152,47 @@
 				<?php } ?>
 				</div>
 			</div>
-		</div>
-		<div class="footer_logo"><img src="css/images/logoforfooter.png" alt=""></div>
-		<div id="footer">
-			<div class="footer_1">
-				<div class="footer_1c">本站开发者</div>
-				<!--<img src="css/images/shanghai_gdg.png" alt=""/>-->
-				<ul>
-					<li>Ryan Yuan： 设计者</li>
-					<li>XuLi: 前端开发</li>
-					<li>Grzhan： 后端开发、维护</li>
-				</ul>
-			</div>
-			<div class="footer_1">
-				<div class="footer_1c">关于本站</div>
-				<!--<img src="css/images/shu.png" alt=""/>-->
-				<ul>
-					<li>支持响应式（部分）</li>
-					<li>采用PHP/Apache开发</li>
-					<li>请使用Chrome/Firefox/IE9+等浏览器浏览</li>
-				</ul>
-			</div>
-			<div class="footer_1">
-				<div class="footer_1c">联系我们</div>
-				<ul>
-					<li>Email:getbetterabc@yeah.net</li>
-					<li>Tel: 13761283909</li>
-					<li>QQ:386839406</li>
-					<li>Copyright:2013-2014</li>
-				</ul>
-			</div>
-			<div class="footer_1">
-				<div class="footer_1c">支持与合作</div>
-				<!--<img src="css/images/csdn_club.png" alt=""/>-->
-				<ul>
-					<li>上海大学计算机工程与科学学院</li>
-					<li>上海谷歌开发组</li>
-					<li>CSDN高校俱乐部</li>
-				</ul>
+			
+			<div class="footer_logo"><img src="css/images/logoforfooter.png" alt=""></div>
+			<div id="footer_container">
+				<div id="footer">
+					<div>
+						<div class="footer_1c">本站开发者</div>
+						<!--<img src="css/images/shanghai_gdg.png" alt=""/>-->
+						<ul>
+							<li>Ryan Yuan: 设计者</li>
+							<li>XuLi: 前端开发</li>
+							<li>Grzhan: 后端开发、维护</li>
+						</ul>
+					</div>
+					<div>
+						<div class="footer_1c">关于本站</div>
+						<!--<img src="css/images/shu.png" alt=""/>-->
+						<ul>
+							<li>支持响应式（部分）</li>
+							<li>采用PHP/Apache开发</li>
+							<li>请使用Chrome/Firefox/IE9+等浏览器浏览</li>
+						</ul>
+					</div>
+					<div>
+						<div class="footer_1c">联系我们</div>
+						<ul>
+							<li>Email: getbetterabc@yeah.net</li>
+							<li>Tel: 13761283909</li>
+							<li>QQ: 386839406</li>
+							<li>&copy; 上海大学开源社区</li>
+						</ul>
+					</div>
+					<div>
+						<div class="footer_1c">支持与合作</div>
+						<!--<img src="css/images/csdn_club.png" alt=""/>-->
+						<ul>
+							<li><a href="http://www.ces.shu.edu.cn/" target="_blank">上海大学计算机工程与科学学院</a></li>
+							<li>上海谷歌开发组</li>
+							<li>CSDN高校俱乐部</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
