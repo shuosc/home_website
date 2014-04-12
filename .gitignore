@@ -1,4 +1,9 @@
-# ignore project files
+# project files
 /.idea
-# ignore binary image cache files
+/.idea/*
+# feed list data
+ArticleFeedList.json
+newest_feed_time
+latesttime
+# binary image cache files
 *.db

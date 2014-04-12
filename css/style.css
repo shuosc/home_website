@@ -14,12 +14,12 @@ body{
 #Bcontainer{
 	width:96%;
 	background: #f2f2f2;
-    /*background-image: url("images/square_bg.png");*/
+	/*background-image: url("images/square_bg.png");*/
 	margin: 0 auto;
 	height: 100%;
 	position: relative;
-    border: 1px solid #555;
-    box-shadow: 6px 6px 6px #555, -6px 6px 6px #555;
+	border: 1px solid #555;
+	box-shadow: 6px 6px 6px #555, -6px 6px 6px #555;
 }
 #container{
 	width: 80%;
@@ -56,7 +56,7 @@ body{
 }
 
 .osi_div {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
 .osi span{
@@ -64,22 +64,23 @@ body{
 }
 
 .osi .subtitle {
-    font-size: 30px;
+	font-size: 30px;
 }
 
 .sub{
 	background: #34495e;
 	position: relative;
-	width: 100%;
+  /*width: 77%;*/
 	height: 50px;
 	color: #34495e;
 	margin:0 auto;
 	margin-top: 110px;
-	-moz-border-radius: 8px;      /* Gecko browsers */
-    -webkit-border-radius: 8px;   /* Webkit browsers */
-    border-radius:8px;            /* W3C syntax */
+	-moz-border-radius: 8px;	  /* Gecko browsers */
+	-webkit-border-radius: 8px;   /* Webkit browsers */
+	border-radius:8px;			/* W3C syntax */
 }
 .sub ul{
+  margin-top: 0;
 	list-style: none;
 	color: #34495e;
 }
@@ -102,7 +103,7 @@ body{
 
 .sub ul li a:hover{
 	background: #10bc9c;
-    /*background: rgba(16,188,156,80);*/
+	/*background: rgba(16,188,156,80);*/
 	color: #f3f3f3;
 }
 .sub_right div{
@@ -127,18 +128,18 @@ body{
 	height: 46px;
 	width: 100%;
 	background: #bfc2c7;
-	-moz-border-radius: 8px 8px 0 0 ;      /* Gecko browsers */
-    -webkit-border-radius: 8px 8px 0 0;   /* Webkit browsers */
-    border-radius:8px 8px 0 0;            /* W3C syntax */
+	-moz-border-radius: 8px 8px 0 0 ;	  /* Gecko browsers */
+	-webkit-border-radius: 8px 8px 0 0;   /* Webkit browsers */
+	border-radius:8px 8px 0 0;			/* W3C syntax */
 	
 }
 .pwh a{
-    color: #34495e;
-    display: inline-block;
-    font-size: 1.3em;
-    padding: 12px 0 0 30px;
-    text-align: center;
-    font-weight: bold;
+	color: #34495e;
+	display: inline-block;
+	font-size: 1.3em;
+	padding: 12px 0 0 30px;
+	text-align: center;
+	font-weight: bold;
 }
 .pwc{
 	height: 360px;
@@ -150,9 +151,9 @@ body{
 	height: 100%;
 	width: 22%;
 	float: left;
-	-moz-border-radius: 0 0 0 8px;      /* Gecko browsers */
-    -webkit-border-radius:  0 0 0 8px;   /* Webkit browsers */
-    border-radius: 0 0 0 8px;   
+	-moz-border-radius: 0 0 0 8px;	  /* Gecko browsers */
+	-webkit-border-radius:  0 0 0 8px;   /* Webkit browsers */
+	border-radius: 0 0 0 8px;   
 }
 
 .leaderbox {
@@ -161,36 +162,36 @@ body{
 }
 
 .leader_img {
-    display: block;
-    width: 137px;
-    height: 137px;
-    margin: 0 auto;
-    background-image: url("images/adam.png");
+	display: block;
+	width: 137px;
+	height: 137px;
+	margin: 0 auto;
+	background-image: url("images/adam.png");
 }
 
 .leader_dsp {
 	padding-top: 12px;
-    text-align: center;
-    font-size: 1.2em;
-    color: #eee;
-    font-weight: bold;
+	text-align: center;
+	font-size: 1.2em;
+	color: #eee;
+	font-weight: bold;
 }
 
 .leader_but {
-    display: block;
-    width: 137px;
-    height: 45px;
-	-moz-border-radius: 4px;      /* Gecko browsers */
-    -webkit-border-radius:  4px;   /* Webkit browsers */
-    border-radius: 4px;   
-    background-color: #10bc9c;
-    text-align: center;
-    font-weight: bold;
-    margin: 10px auto;
-    cursor: pointer;
-    color: #fff;
-    font-size: 15px;
-    line-height: 45px;
+	display: block;
+	width: 137px;
+	height: 45px;
+	-moz-border-radius: 4px;	  /* Gecko browsers */
+	-webkit-border-radius:  4px;   /* Webkit browsers */
+	border-radius: 4px;   
+	background-color: #10bc9c;
+	text-align: center;
+	font-weight: bold;
+	margin: 10px auto;
+	cursor: pointer;
+	color: #fff;
+	font-size: 15px;
+	line-height: 45px;
 	transition: background .3s ease;
 }
 
@@ -203,64 +204,65 @@ body{
 	width: 78%;
 	float: right;
 	background: #435c70;
-	-moz-border-radius: 0 0 8px 0;      /* Gecko browsers */
-    -webkit-border-radius:  0 0 8px 0;   /* Webkit browsers */
-    border-radius: 0 0 8px 0;   
+	-moz-border-radius: 0 0 8px 0;	  /* Gecko browsers */
+	-webkit-border-radius:  0 0 8px 0;   /* Webkit browsers */
+	border-radius: 0 0 8px 0;   
 }
 
 .message_list{
 	margin-top: 50px;
 	/*min-height: 800px;*/
 	width: 100%;
-    font: 16px/22px "\B8B\4F53";
+	font: 16px/22px "\B8B\4F53";
 }
 .message_list>div{
-    padding: 15px 0;
+	padding: 15px 0;
 	margin-top: 20px;
 	border: 4px solid #324758;
 	min-height: 80px;
-	-moz-border-radius: 5px;      /* Gecko browsers */
-    -webkit-border-radius: 5px;   /* Webkit browsers */
-    border-radius:5px;
-    background-color: #fefefe;
-    color: #34495e;
+	-moz-border-radius: 5px;	  /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius:5px;
+	background-color: #fefefe;
+	color: #34495e;
 
 }
 .message_list a {
-    color: #34495e;
+	color: #34495e;
 }
 
 .msg_logo {
-    display: block;
-    width: 120px;
-    float: left;
-    height: 100%;
+  margin-top: -7px;
+	display: block;
+	width: 120px;
+	float: left;
+	height: 100%;
 }
 
 .msg_img {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    background-image: url('images/renren_osc.jpg');
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	background-image: url('images/renren_osc.jpg');
 }
 
 .msg_name {
-    display: block;
-    width: 80px;
-    float: left;
-    color: #10bc9c;
-    font-size: 1.1em;
-    height:100%;
+	display: block;
+	width: 80px;
+	float: left;
+	color: #10bc9c;
+	font-size: 1.1em;
+	height:100%;
 }
 
 .msg_content{
-    display: block;
-    font-size: 1.2em;
-    text-indent: 1.5em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 100%;
-    margin-right: 10px;
+	display: block;
+	font-size: 1.2em;
+	text-indent: 1.5em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 100%;
+	margin-right: 10px;
 }
 
 #footer_container {
@@ -287,11 +289,11 @@ body{
 }
 
 .turnto_box{
-    width: 30%;
-    height: 347px;
+	width: 30%;
+	height: 347px;
 
-    display: inline-block;
-    float: left;
+	display: inline-block;
+	float: left;
 }
 .turnto_point{
 	overflow: auto;
@@ -335,31 +337,31 @@ body{
 }
 .content_box{
 	font-size: 1.1em;
-    font-weight: bold;
+	font-weight: bold;
 	font-family: "Microsoft YaHei" ! important;
 	color: #fff;
-    padding: 10px 3px 2px 38px;
+	padding: 10px 3px 2px 38px;
 }
 
 #footer>div{
-    float: left;
-    width: 260px;
-    height: 180px;
-    color: #8e8e8e;
-    font-size: 15px;
-    margin-left: 63px;
-    margin-left: 59px;
-    margin-top: 42px;
+	float: left;
+	width: 260px;
+	height: 180px;
+	color: #8e8e8e;
+	font-size: 15px;
+	margin-left: 63px;
+	margin-left: 59px;
+	margin-top: 42px;
 }
 
 #footer li {
-    list-style: none;
-    line-height: 25px;
+	list-style: none;
+	line-height: 25px;
 }
 
 #footer ul {
-    padding-left: 0;
-    margin-left: 0;
+	padding-left: 0;
+	margin-left: 0;
 }
 
 .footer_1c{
@@ -367,7 +369,7 @@ body{
 }
 
 .footer_1c {
-    list-style: none;
+	list-style: none;
 }
 
 .footer_logo{
@@ -376,14 +378,14 @@ body{
 	margin: 0 auto;
 	margin-bottom: -28px;
 	z-index: 2;
-    padding-top: 30px;
+	padding-top: 30px;
 }
 .footer_logo img{
 }
 img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
 }
 @media screen and (max-width: 900px) {
 	.pwcl {
@@ -411,11 +413,45 @@ img {
 }
 
 .mCSB_dragger_bar {
-     background-color: #10bc9c !important;
-     width: 4px !important;
+	 background-color: #10bc9c !important;
+	 width: 4px !important;
 }
 
 .mCSB_draggerRail {
 	width: 4px !important;
+}
+/*回到顶部css*/
+p#back-to-top{
+	position:fixed;
+	bottom:100px;
+	right:117px;
+	z-index: 8;
+	display: none;
+}
+p#back-to-top a{
+	text-align:center;
+	text-decoration:none;
+	color:#d1d1d1;
+	display:block;
+	width:68px;
+	/*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+	-moz-transition:color 1s;
+	-webkit-transition:color 1s;
+	-o-transition:color 1s;
+}
+p#back-to-top a:hover{
+	color:#979797;
+}
+p#back-to-top a span{
+	background:#d1d1d1 url(../images/toTop.png) no-repeat 0 0;
+	border-radius:3px;
+	display:block;
+	height:68px;
+	width:68px;
+	margin-bottom:5px;
+
+}
+#back-to-top a:hover span{
+	background:#979797 url(../images/toTop.png) no-repeat -72px 0;
 }
 
