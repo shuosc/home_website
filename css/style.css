@@ -423,8 +423,8 @@ img {
 /*回到顶部css*/
 p#back-to-top{
 	position:fixed;
-	bottom:100px;
-	right:117px;
+	bottom:10%;
+	right:7%;
 	z-index: 8;
 	display: none;
 }
