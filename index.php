@@ -153,7 +153,9 @@
 					<div class="msg_item" id="aid<?=$r['aid']?>">
 						<div class="msg_logo"><div class="msg_img"></div></div>
 						<div class="msg_name">开源社区</div>
-						<div class="msg_content"> <?=$r['content']?></div>
+						<div class="msg_content"> <div class="msg_content_inner"> <?=$r['content']?> </div> <div class="msg_date"> <?=$r['date']?></div></div>
+						
+
 					</div>
 				<?php } ?>
 				</div>

@@ -51,7 +51,7 @@ body{
 	text-align: center;
 }
 .osi div{
-	font-size: 60px;
+	font-size: 50px;
 	font-family: "Microsoft YaHei" ! important;
 	color: #354d65;
 	line-height: 58px;
@@ -259,12 +259,24 @@ body{
 
 .msg_content{
 	display: block;
-	font-size: 1.2em;
-	text-indent: 1.5em;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	height: 100%;
 	margin-right: 10px;
+}
+
+.msg_content_inner {
+	min-height: 55px;
+	font-size: 1.2em;
+	text-indent: 1.5em;
+
+}
+
+.msg_date {
+	font-size: 1.1em;
+	color: #AAA;
+	float: right;
+	margin-right: 4%;
 }
 
 #footer_container {
