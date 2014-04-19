@@ -20,7 +20,9 @@ body{
 	position: relative;
 	border: 1px solid #555;
 	box-shadow: 6px 6px 6px #555, -6px 6px 6px #555;
+	min-width: 600px;
 }
+
 #container{
 	width: 80%;
 	margin:0 auto;
@@ -394,6 +396,10 @@ img {
 	.pwcr{
 		width: 100%;
 	}
+
+    .msg_name {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 534px){
@@ -406,7 +412,17 @@ img {
 	.turnto_box{
 		display: none;
 	}
+
+	.msg_logo {
+		display: none;
+	}
+
+	.subtitle {
+		/*display: none;*/
+	}
 }
+
+
 
 .clearboth{
 	clear: both;

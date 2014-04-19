@@ -22,11 +22,17 @@
 	<script src="js/slide.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="js/bootstrap.min.js"></script>
+	
+	
 
 	<script>
 		(function($){
 			$(window).load(function(){
 				$(".turnto_point").mCustomScrollbar();
+				$("body").resize(function(){
+					console.log(document.body.clientWidth);
+					console.log(document.body.clientHeight);
+				});
 			});
 		})(jQuery);
 	</script>
@@ -50,7 +56,7 @@
 			<div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='升级为Google公司的Chrome浏览器'/></a></div>
 		</div>
 	</div>
-	<![endif]--> 
+	<![endif]-->
 	<div id="Bcontainer">
 		<a href="https://github.com/shuopensourcecommunity">
 			<img style="position: absolute; top: 0; right: 0; border: 0;" src="css/images/joinus.png" alt="Join us on GitHub">
@@ -61,7 +67,7 @@
 					<a class="logo" href="index.php"></a>
 					<div class="osi_div">
 						<a class="osi" href="index.php">
-							<div><span>上海大学开源社区</span></div>
+							<div class="title"><span>上海大学开源社区</span></div>
 							<div class="subtitle">SHU Open Source Community</div>
 						</a>
 					</div>
@@ -84,7 +90,7 @@
 			</div>
 			<div class="clearboth"></div>
 			<div id="cv">
-				<div class="photowall">	
+				<div class="photowall">
 					<div class="pwh"><a href="">相册</a></div>
 					<div class="pwc">
 						<div class="pwcl">
