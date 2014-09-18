@@ -3,7 +3,7 @@
 <head>
 	<title>上海大学开源社区 - 主页</title>
 	<meta name="description" content="上海大学开源社区" />
-	<meta name="keywords" content="" />
+	<meta name="keywords" content="open source,开源社区,上海大学,geek" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
@@ -16,20 +16,13 @@
 	<link rel="stylesheet" href="js/responsive-nav.js-master/responsive-nav.css">
 	<script src="js/responsive-nav.js-master/responsive-nav.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
 	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="js/slide.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script src="js/bootstrap.min.js"></script>
+	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+	<!--<script src="js/bootstrap.min.js"></script>-->
 
-	<script>
-		(function($){
-			$(window).load(function(){
-				$(".turnto_point").mCustomScrollbar();
-			});
-		})(jQuery);
-	</script>
 </head>
 <body>
 	<p id="back-to-top">
@@ -69,9 +62,9 @@
 
 				<div class="row">
 		 				<div class="sub col-xm-5 navbar-wrapper">
-						<ul>
-							<li><a href="#" >主页</a></li>
-							<li><a href="https://github.com/shuopensourcecommunity" >Github</a></li>
+						<ul id="main_nav">
+							<li class="nav_item"><a href="#" class="disable">主页</a></li>
+							<li class="nav_item"><a href="https://github.com/shuopensourcecommunity" target="_blank">Github</a></li>
 							<!--<li><a href="#" >About us</a></li>-->
 						</ul>
 						<div class="sub_right">
@@ -166,15 +159,6 @@
 						</ul>
 					</div>
 					<div>
-						<div class="footer_1c">关于本站</div>
-						<!--<img src="css/images/shu.png" alt=""/>-->
-						<ul>
-							<li>支持响应式（部分）</li>
-							<li>采用PHP/Apache开发</li>
-							<li>请使用Chrome/Firefox/IE9+等浏览器浏览</li>
-						</ul>
-					</div>
-					<div>
 						<div class="footer_1c">联系我们</div>
 						<ul>
 							<li>Email: getbetterabc@yeah.net</li>
@@ -188,8 +172,8 @@
 						<!--<img src="css/images/csdn_club.png" alt=""/>-->
 						<ul>
 							<li><a href="http://www.ces.shu.edu.cn/" target="_blank">上海大学计算机工程与科学学院</a></li>
-							<li>上海谷歌开发组</li>
-							<li>CSDN高校俱乐部</li>
+							<li><a href="http://gdgshanghai.com/" target="_blank">上海谷歌开发组</a></li>
+							<li><a href="http://student.csdn.net/mcg/home/167182">CSDN高校俱乐部</a></li>
 						</ul>
 					</div>
 				</div>
@@ -200,6 +184,10 @@
 	<script type="text/javascript">
 	//回到顶部
 	$(document).ready(function(){
+    $(".turnto_point").mCustomScrollbar();
+
+    $("a.disable").click(function(e) {e.preventDefault();});
+
 		$('#back-to-top').hide();
 		$(window).scroll(function() {
 			if($(window).scrollTop() > 100){

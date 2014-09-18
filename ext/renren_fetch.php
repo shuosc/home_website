@@ -41,7 +41,14 @@
             $ariticle_data['date'] = trim($element->find('span.pulish-time',0)->plaintext);
             $ariticle_list[] = $ariticle_data;
         }
+        
+        return $ariticle_data;
+    }
 
+    function renrenFetchAndPutContent($renrenURL = 'fdoings.html')
+    {
+        $ariticle_data = renrenFetch($renrenURL);
+        
         if ($ariticle_list) {
             $json_file_name = 'ArticleFeedList.json';
             $ariticle_list_json = json_encode($ariticle_list);
@@ -55,11 +62,11 @@
     }
 
     /**
-	*	function renrenUpdate()
-	*	Update open-source community feed list in ArticleFeedList.json (call `renrenFetch` function)
-    */
+     *	function renrenUpdate()
+     *	Update open-source community feed list in ArticleFeedList.json (call `renrenFetchAndPutContent` function)
+     */
     function renrenUpdate() {
-        if (renrenFetch('http://page.renren.com/601684970/channel-statuslist-0?pid=601684970') <=0){
+        if (renrenFetchAndPutContent('http://page.renren.com/601684970/channel-statuslist-0?pid=601684970') <=0){
             echo 'Error.';
         } else {
             echo 'Update Success ' . date(TIME_RULE);
