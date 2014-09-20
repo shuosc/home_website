@@ -42,12 +42,12 @@
             $ariticle_list[] = $ariticle_data;
         }
         
-        return $ariticle_data;
+        return $ariticle_list;
     }
 
     function renrenFetchAndPutContent($renrenURL = 'fdoings.html')
     {
-        $ariticle_data = renrenFetch($renrenURL);
+        $ariticle_list = renrenFetch($renrenURL);
         
         if ($ariticle_list) {
             $json_file_name = 'ArticleFeedList.json';
