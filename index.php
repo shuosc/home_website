@@ -210,7 +210,7 @@
 </html>
 <!-- PHP ： 人人状态信息更新 -->
 <?php
-	ob_start();
-	renrenUpdate();
-	ob_end_clean();
+//	ob_start();
+//	renrenUpdate();
+//	ob_end_clean();
 ?>
