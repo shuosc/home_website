@@ -5,7 +5,7 @@
 	<meta name="description" content="上海大学开源社区" />
 	<meta name="keywords" content="open source,开源社区,上海大学,geek" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"  />
