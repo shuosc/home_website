@@ -1,9 +1,11 @@
 # project files
-/.idea
-/.idea/*
+.idea
+.idea/*
 # feed list data
 ArticleFeedList.json
+ext/ArticleFeedList.json
 newest_feed_time
+ext/newest_feed_time
 latesttime
 # binary image cache files
 *.db
