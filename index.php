@@ -85,6 +85,7 @@
 								<div class="leader_dsp">
 									社区负责人： <span class="highlight">杨 瑒</span>
 								</div>
+								<div  class="leader_dsp">字符串翻转技术强</div
 								<div class="leader_but">
 									+ 联系他
 								</div>
