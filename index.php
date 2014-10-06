@@ -27,6 +27,7 @@
 	<p id="back-to-top">
 		<a href="#top"><span></span></a>
 	</p>
+	<!--字符串翻转哪家强,上大开源找羊羊 (o'-')o( ╥ω╥` )  -->
 	<!--[if lt IE 8]>
 	<div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
 		<div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://images.24city.com/noie6/ie6nomore-cornerx.jpg' style='border: none;' alt='关闭本提示'/></a></div>
@@ -83,9 +84,8 @@
 							<div class="leaderbox">
 								<div class="leader_img"></div>
 								<div class="leader_dsp">
-									社区负责人： <span class="highlight">杨 瑒</span>
+									社区负责人： <span class="highlight">郑旭铭</span>
 								</div>
-								<div  class="leader_dsp">字符串翻转技术强</div
 								<div class="leader_but">
 									+ 联系他
 								</div>
