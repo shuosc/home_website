@@ -83,8 +83,9 @@
 							<div class="leaderbox">
 								<div class="leader_img"></div>
 								<div class="leader_dsp">
-									社区负责人： <span class="highlight">杨 瑒</span>
+									社区负责人： <span class="highlight">郑旭铭</span>
 								</div>
+								<!--字符串翻转哪家强,上大开源找羊羊 (o'-')o( ╥ω╥` )  -->
 								<div class="leader_but">
 									+ 联系他
 								</div>
