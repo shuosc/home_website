@@ -141,13 +141,13 @@
 						<div class="msg_logo"><div class="msg_img"></div></div>
 						<div class="msg_name">开源社区</div>
 						<div class="msg_content"> <div class="msg_content_inner"> <?=$r['content']?> </div> <div class="msg_date"> <?=$r['date']?></div></div>
-						
+
 
 					</div>
 				<?php } ?>
 				</div>
 			</div>
-			
+
 			<div class="footer_logo"><img src="css/images/logoforfooter.png" alt=""></div>
 			<div id="footer_container">
 				<div id="footer">
@@ -163,9 +163,9 @@
 					<div>
 						<div class="footer_1c">联系我们</div>
 						<ul>
-							<li>Email: getbetterabc@yeah.net</li>
-							<li>Tel: 13761283909</li>
-							<li>QQ: 386839406</li>
+							<li>Email: bucketzxm@gmail.com</li>
+							<li>Tel: 13524678769</li>
+							<li>QQ: 827932122</li>
 							<li>&copy; 上海大学开源社区</li>
 						</ul>
 					</div>
